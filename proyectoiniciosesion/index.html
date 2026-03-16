@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src = "js/scripts.js" defer> </script>
+</head>
+
+<body>
+<div class="contenedor-principal">
+
+<form id="formulario-inicio">
+
+<h2>Iniciar sesión</h2>
+
+<div class="datos-entrada">
+<label>Usuario</label>
+<input type="text" id="loginUsuario" required>
+</div>
+
+<div class="datos-entrada">
+<label>Contraseña</label>
+<input type="password" id="loginPassword" required>
+   <div class="campo-password2">
+                    <span id="togglePassword2" class="ver-password2">Ver</span>
+   </div>
+
+<button type="submit">Entrar</button>
+</form>
+<button type = "button" id="botonRegistro"> Registrarme </button>
+</div>
+<!--</div>-->
+
+
+
+
+ 
+
+
+   <!--<div class="contenedor-secundario">-->
+        <form id= "formulario-registro" novalidate>
+            <h2>Crea tu cuenta</h2>
+
+            <div class = "datos-entrada">
+                <label for="nombreusuario">Nombre de usuario</label>
+                <input type="text" id ="nombreusuario"placeholder="Ej: dev_master" required minlength = "4">
+                <span class="mensaje-error">El usuario debe tener al menos 4 caracteres.</span>
+            </div>
+
+            <div class="datos-entrada">
+                <label for="correo">Correo electronico</label>
+                <input type="email" id = "correo" placeholder="tu@correo.com" required>
+                <span class="mensaje-error">Ingresa un correo electronico válido.</span>
+            </div>
+
+
+            <div class="datos-entrada">
+                <label for="contraseña">Contraseña</label>
+                <input type="password" id="contraseña" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"> 
+                <div class="campo-password">
+                    <span id="togglePassword" class="ver-password">Ver</span> </div>
+
+                <span class="mensaje-error">Minimo 8 caracteres. incluyendo letras y números.</span>
+              <div class="nivel-seguridad" id = "nivelseguridad"></div>
+            
+           <button type="submit">Registrarme</button>
+           <button type="button" id="botonVolver">Volver al login</button>
+
+            
+           
+       
+        </form>
+        <!--</div>-->
+
+        </div>
+
+</body>
+
+
+</html>
+
+
